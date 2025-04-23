@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Boards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="themeButtonWrapper">
+        <h1 style="text-align: center; font-size: 3.5rem; font-weight: 700;">Kanban Boards</h1>
+        <button id="themeBtn" class="themeButton">Light</button>
+    </div>
+    <div class="container" id="boardContainer">
+        <div class="boards" id="todoBoards">
+            <div class="header">
+                <h4 class="boardh4">Todo</h4>
+                <button class="deleteBoard">DELETE BOARD</button>
+            </div>
+            <p class="item">Learn Recat</p>
+            <p class="item">Learn JavaScript</p>
+        </div>
+        <div class="boards" id="progressBoards">
+            <div class="header">
+                <h4 class="boardh4">Progress</h4>
+                <button class="deleteBoard">DELETE BOARD</button>
+            </div>
+        </div>
+        <div class="boards" id="doneBoards">
+            <div class="header">
+                <h4 class="boardh4">Done</h4>
+                <button class="deleteBoard">DELETE BOARD</button>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="addTaskCard">
+        <input type="text" name="" placeholder="Add your Task here" id="addTaskInput">
+        <button id="addTaskButton">Add Task</button>
+    </div>
+    <div class="cardForBoards" id="addBoard">
+        <input type="text" name="" placeholder="Add your Board Title here" id="addHeading">
+        <button id="addCardTitle">Add Title</button>
+    </div>
+    <button id="createCardButton">Create card</button>
+    <button id="createBoard">Create Board</button>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
