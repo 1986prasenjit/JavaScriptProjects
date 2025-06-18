@@ -22,6 +22,7 @@ body {
     position: relative;
     width: 100px;
     height: 150px;
+    border:10px solid red
   }
   
   .bulb {
